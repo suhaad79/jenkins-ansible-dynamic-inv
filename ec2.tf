@@ -1,10 +1,9 @@
 provider "aws" {
-      region = "us-east-1"
+      region = "us-east-2"
 }
 resource "aws_instance" "app" {
-    ami           = "ami-08e637cea2f053dfa"
+    ami           = "ami-0beaa649c482330f7"
     instance_type = "t3.micro"
-    security_groups = ["jkSG"]
     key_name      =  "kops"
     tags = {
         Name = " tomcat-CI"
