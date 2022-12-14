@@ -7,7 +7,7 @@ resource "aws_instance" "app" {
     security_groups = ["jkSG"]
     key_name      =  "key29"
     tags = {
-        Name = " tomcat"
+        Name = " tomcat-CI"
         Environment = "dev"
   }  
 }
